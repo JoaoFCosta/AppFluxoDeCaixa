@@ -17,6 +17,7 @@ namespace AppFluxoDeCaixa.Data
             base.OnModelCreating(builder);
             builder.Entity<Clientes>().ToTable("1234Clientes");
         }
+        public DbSet<AppFluxoDeCaixa.Models.Fornecedor> Fornecedor { get; set; } = default!;
 
     }
 }
